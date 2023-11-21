@@ -40,3 +40,14 @@ alter user user3 quota 30M on users;
 -- [표현법] drop user 사용자명; => 테이블이 없는 상태
 -- [표현법] drop user 사용자명 cascade; => 테이블이 있을 때
 drop user c##user1;
+
+alter session set "_oracle_script"=true;
+create user workbook identified by workbok;
+grant RESOURCE, CONNECT to workbook;
+alter user workbook default tablespace users quota unlimited on users;
+
+
+alter session set "_oracle_script" = true;
+create user ddl identified by ddl;
+grant resource, connect to ddl;
+alter user ddl default tablespace users quota unlimited on users;
