@@ -51,3 +51,13 @@ alter session set "_oracle_script" = true;
 create user ddl identified by ddl;
 grant resource, connect to ddl;
 alter user ddl default tablespace users quota unlimited on users;
+
+alter session set "_oracle_script" = true;
+create user mybatis identified by mybatis;
+grant resource, connect to mybatis;
+alter user mybatis default tablespace users quota unlimited on users;
+
+alter session set "_oracle_script" = true;
+create user springboot identified by springboot;
+grant resource, connect to springboot;
+alter user springboot default tablespace users quota unlimited on users;
