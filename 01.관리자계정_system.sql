@@ -61,3 +61,8 @@ alter session set "_oracle_script" = true;
 create user springboot identified by springboot;
 grant resource, connect to springboot;
 alter user springboot default tablespace users quota unlimited on users;
+
+alter session set "_oracle_script" = true;
+create user mopot identified by mopot;
+grant resource, connect to mopot;
+alter user mopot default tablespace users quota unlimited on users;
